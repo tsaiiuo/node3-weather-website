@@ -20,7 +20,17 @@ const forecast = (latitude, longitude, callback) => {
           " The temperature right now is " +
           data.temperature +
           " and feels like " +
-          data.feelslike
+          data.feelslike +
+          "<br>" +
+          "Humidity: " +
+          data.humidity +
+          " persent" +
+          "<br>" +
+          "Region: " +
+          body.location.region +
+          "<br>" +
+          " Local time: " +
+          body.location.localtime
       );
     }
   });
