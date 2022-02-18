@@ -88,6 +88,6 @@ app.get("*", (req, res) => {
 });
 
 //Listener
-app.listen("3000", () => {
+app.listen(port, () => {
   console.log("server up!");
 });
