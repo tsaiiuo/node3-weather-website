@@ -22,19 +22,19 @@ hbs.registerPartials(partialsPath);
 //Express.js
 app.get("", (req, res) => {
   res.render("index", {
-    name: "Ian",
+    name: "Huan",
     title: "Weather App",
   });
 });
 app.get("/about", (req, res) => {
   res.render("about", {
-    name: "Ian",
-    title: "About",
+    name: "Huan",
+    title: "About Me",
   });
 });
 app.get("/help", (req, res) => {
   res.render("help", {
-    name: "Ian",
+    name: "Huan",
     title: "Help",
   });
 });
@@ -67,21 +67,21 @@ app.get("/weather", (req, res) => {
 //404
 app.get("/about/*", (req, res) => {
   res.render("404", {
-    name: "Ian",
+    name: "Huan",
     title: "404",
     errorMessage: "About article not found",
   });
 });
 app.get("/help/*", (req, res) => {
   res.render("404", {
-    name: "Ian",
+    name: "Huan",
     title: "404",
     errorMessage: "Help article not found",
   });
 });
 app.get("*", (req, res) => {
   res.render("404", {
-    name: "Ian",
+    name: "Huan",
     title: "404",
     errorMessage: "Page not found",
   });

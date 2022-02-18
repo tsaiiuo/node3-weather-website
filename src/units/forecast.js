@@ -19,7 +19,7 @@ const forecast = (latitude, longitude, callback) => {
           data.weather_descriptions +
           " The temperature right now is " +
           data.temperature +
-          " and it is feel like " +
+          " and feels like " +
           data.feelslike
       );
     }
