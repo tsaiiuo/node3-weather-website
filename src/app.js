@@ -4,7 +4,10 @@ const hbs = require("hbs");
 //const request = require("postman-request");
 const geocode = require("./units/geocode.js");
 const forecast = require("./units/forecast");
+
 const app = express();
+const port = process.env.PORT || 3000;
+
 const htmlPath = path.join(__dirname, "../public");
 const viewsPath = path.join(__dirname, "../templates/views");
 const partialsPath = path.join(__dirname, "../templates/partials");
